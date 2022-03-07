@@ -91,14 +91,6 @@ class FindDestinationVC: UIViewController {
                 }
             }
         }
-        /*
-        for bus in buses {
-         var b = bus
-         if b.id == busInformation.id {
-             
-             soldSeats.forEach{b.soldSeats[$0] = $1}
-         }
-        }*/
     }
     
     func getDate1(){

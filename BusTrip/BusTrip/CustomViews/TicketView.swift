@@ -19,11 +19,9 @@ class TicketView: UIView {
        }
        
        required init?(coder: NSCoder) {
-           //fatalError("No storyboard here")
            super.init(coder: coder)
            backgroundColor = .white
            layer.cornerRadius = 18
-          // drawTicket()
        }
     
     override func layoutSubviews() {
@@ -34,10 +32,7 @@ class TicketView: UIView {
         let ticketShapeLayer = CAShapeLayer()
           ticketShapeLayer.frame = self.bounds
         ticketShapeLayer.fillColor = UIColor.lightBlueColor.cgColor
-        //UIColor.init(displayP3Red: 255, green: 140, blue: 250, alpha: 1).cgColor
-        //UIColor(red: 57, green: 110, blue:176, alpha: 1).cgColor
         ticketShapeLayer.shadowColor = UIColor.gray.cgColor
-       // ticketShapeLayer.shadowOffset = C
         ticketShapeLayer.shadowRadius = 2
         ticketShapeLayer.shadowOpacity = 1
         

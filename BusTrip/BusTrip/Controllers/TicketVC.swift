@@ -39,16 +39,7 @@ class TicketVC: UIViewController {
         }
         seatsLabel.text = seats
         
-           /*
-            view.addSubview(ticketView)
-
-            // Some autolayout constraints
-            ticketView.translatesAutoresizingMaskIntoConstraints = false
-            ticketView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-            ticketView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-            ticketView.widthAnchor.constraint(equalToConstant: view.frame.width - 75).isActive = true
-            ticketView.heightAnchor.constraint(equalToConstant: view.frame.height - 160).isActive = true
-            */
+          
         }
     
     @IBAction func backButtonClicked(_ sender: UIButton) {

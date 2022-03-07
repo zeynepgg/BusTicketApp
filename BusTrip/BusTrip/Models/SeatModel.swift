@@ -9,8 +9,6 @@ import Foundation
 import UIKit
 
 class SeatModel {
-    
-    //var bus: BusModel
     var seatNumber: Int
     var image: UIImage
     var isBooked: Bool
@@ -19,7 +17,6 @@ class SeatModel {
     var isSelected: Bool
     
     init( seatNumber: Int, image: UIImage, isBooked: Bool, text: String, gender: Int, isSelected: Bool) {
-       // self.bus = bus
         self.seatNumber = seatNumber
         self.image = image
         self.isBooked = isBooked

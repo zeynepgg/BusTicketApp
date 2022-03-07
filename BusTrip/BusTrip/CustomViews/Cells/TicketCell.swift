@@ -21,7 +21,5 @@ class TicketCell: UICollectionViewCell {
         self.dateLabel.text = model.bus?.date
         self.toLabel.text = model.bus?.cityTo
         self.fromLabel.text = model.bus?.cityFrom
-       // self.busTime.text = model.time
-       // self.busPrice.text = "\(String(model.price)).00 TL"
     }
 }

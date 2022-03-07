@@ -71,7 +71,6 @@ class PayScreenVC: UIViewController {
         ticket.numberOfSeats = selectedSeats.count
         ticket.cost = cost
         
-        //NotificationCenter.default.post(name: .sendTicketNotification, object: nil, userInfo: ["ticket" : ticket])
         SharedTickets.bookedTickets.append(ticket)
         print("pay screen: ", SharedTickets.bookedTickets)
     }
@@ -85,11 +84,6 @@ class PayScreenVC: UIViewController {
             isPayed = true
             self.delegate?.sendBooking(isPayed: isPayed, seatDict: soldSeats)
             
-
-            
-            
-            
-            //self.dismiss(animated: true) // daha sonra pop up çıkart
             self.performSegue(withIdentifier: "goToConfirmPopUpVC", sender: self)
         }else{
             self.performSegue(withIdentifier: "goToError", sender: self)

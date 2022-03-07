@@ -21,7 +21,6 @@ class ConfirmPopUpVC: UIViewController {
         self.performSegue(withIdentifier: "goToTicket", sender: self)
     }
     @IBAction func goHomeClicked(_ sender: UIButton) {
-       // self.view.window!.rootViewController?.dismiss(animated: true, completion: nil)
     
         self.view.window!.rootViewController?.presentedViewController?.dismiss(animated: true, completion: nil)
 

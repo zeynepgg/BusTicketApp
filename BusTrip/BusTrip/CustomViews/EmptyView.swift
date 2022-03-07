@@ -25,7 +25,6 @@ class EmptyView: UIView {
         if let viewToAdd = bundle.loadNibNamed("EmptyView", owner: self, options: nil), let contentView = viewToAdd.first as? UIView {
             addSubview(contentView)
             contentView.frame = self.bounds
-            //contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         }
 
     }

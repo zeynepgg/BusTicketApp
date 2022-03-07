@@ -35,7 +35,6 @@ class SeatsVC: UIViewController {
     var seatPrice = 0
     var totalPrice = 0
     var errorMode = Int()
-    //var tempSoldSeats: [String : Int] = [:]
 
     var isBooked = false {
         didSet{
@@ -178,7 +177,7 @@ extension SeatsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == seatsCollectionView {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SeatCell", for: indexPath) as! SeatCell
-        //cell.configure(with: seats[indexPath.row])
+            
         cell.alpha = 0 // Initially alpha 0
         let text = seats[indexPath.row].text
 
@@ -198,19 +197,11 @@ extension SeatsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                     seats[indexPath.row].gender = bus.soldSeats["\(text)"]!
                 }
             }
-            //cell.layer.borderWidth = 1.0
+            
         cell.configure(model: seats[indexPath.row])
         if seats[indexPath.row].isSelected {
             seats[indexPath.row].image = UIImage(named: "pembeKoltuk")!
         }
-        
-        //cell.seatNumberLabel.text = text
-        
-        //cell.seatImage.image = UIImage(named: seats[indexPath.row].image)
-       // cell.seatImage.contentMode = UIView.ContentMode.scaleAspectFit
-            //cell.seatNumberLabel.textAlignment = .center
-            //cell.seatNumberLabel.textColor = UIColor.darkGray
-           // cell.layer.cornerRadius = 5
             return cell
         }else{
             let selectedCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SelectedSeatCell", for: indexPath) as! SelectedSeatCell
@@ -259,7 +250,6 @@ extension SeatsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 }else {
                     if selectedSeats.count > 4 {
                         selectError(errorMode: 1)
-                        //self.performSegue(withIdentifier: "goToError", sender: self)
                         print("en fazla 5 seç")
                     }else {
                         if selected == false {

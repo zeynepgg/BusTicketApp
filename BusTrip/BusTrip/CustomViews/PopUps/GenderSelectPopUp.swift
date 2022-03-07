@@ -25,15 +25,6 @@ class GenderSelectPopUp: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     @IBAction func womanButtonClicked(_ sender: UIButton) {
         gender = 1
         self.delegate?.sendGender(gender: 1)

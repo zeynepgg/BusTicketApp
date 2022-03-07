@@ -25,11 +25,8 @@ class CitiesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //tableView.backgroundColor = UIColor(red: 218, green: 221, blue: 252, alpha: 1.5)
-        //searchBar.barTintColor = UIColor(red: 46, green: 76, blue: 109, alpha: 1.5)
         tableView.backgroundView = nil
         tableView.backgroundColor = .likeBlueWhiteColor
-        //tableView.backgroundColor = UIColor(red: 218, green: 221, blue: 252, alpha: 1.5)
        
 
         // Do any additional setup after loading the view.
