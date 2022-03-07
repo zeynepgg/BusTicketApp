@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		930DBB8B27C3F8A700E47778 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DBB8A27C3F8A700E47778 /* NotificationExtension.swift */; };
+		930DBB8D27C4126000E47778 /* ConfirmPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DBB8C27C4126000E47778 /* ConfirmPopUpVC.swift */; };
+		930DBB9127C42B6D00E47778 /* GenderSelectPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DBB9027C42B6D00E47778 /* GenderSelectPopUp.swift */; };
+		930DBB9327C42D7100E47778 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DBB9227C42D7100E47778 /* ErrorModel.swift */; };
+		930DBB9527C42DAD00E47778 /* ErrorPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DBB9427C42DAD00E47778 /* ErrorPopUpVC.swift */; };
+		938BFB4A27C285D800C7D42E /* SeatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938BFB4927C285D800C7D42E /* SeatsVC.swift */; };
+		938BFB4C27C28FC300C7D42E /* SeatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938BFB4B27C28FC300C7D42E /* SeatCell.swift */; };
+		938BFB4E27C2924200C7D42E /* SeatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938BFB4D27C2924200C7D42E /* SeatModel.swift */; };
+		938DC04627C1B4A50043AA0F /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DC04527C1B4A50043AA0F /* CityModel.swift */; };
+		938DC04827C2730C0043AA0F /* BusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DC04727C2730C0043AA0F /* BusCell.swift */; };
+		93959C7A27C149D200BE178A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93959C7927C149D200BE178A /* AppDelegate.swift */; };
+		93959C7C27C149D200BE178A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93959C7B27C149D200BE178A /* SceneDelegate.swift */; };
+		93959C8127C149D200BE178A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93959C7F27C149D200BE178A /* Main.storyboard */; };
+		93959C8427C149D200BE178A /* BusTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93959C8227C149D200BE178A /* BusTrip.xcdatamodeld */; };
+		93959C8627C149D400BE178A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93959C8527C149D400BE178A /* Assets.xcassets */; };
+		93959C8927C149D400BE178A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93959C8727C149D400BE178A /* LaunchScreen.storyboard */; };
+		93959CA027C152FF00BE178A /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93959C9F27C152FF00BE178A /* UIView + Extension.swift */; };
+		93959CA227C1536900BE178A /* OnboardingSlideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93959CA127C1536900BE178A /* OnboardingSlideModel.swift */; };
+		93959CA827C1573800BE178A /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93959CA727C1573800BE178A /* OnboardingCell.swift */; };
+		93959CAA27C1580400BE178A /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93959CA927C1580400BE178A /* OnboardingVC.swift */; };
+		93959CAC27C15F5500BE178A /* FindDestinationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93959CAB27C15F5500BE178A /* FindDestinationVC.swift */; };
+		93959CAE27C15F7C00BE178A /* BookedDestinationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93959CAD27C15F7C00BE178A /* BookedDestinationsVC.swift */; };
+		93B66B0527C4FDE10001BF22 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B66B0427C4FDE10001BF22 /* TicketView.swift */; };
+		93B66B0727C4FE670001BF22 /* TicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B66B0627C4FE670001BF22 /* TicketVC.swift */; };
+		93B66B0927C51A130001BF22 /* TicketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B66B0827C51A130001BF22 /* TicketCell.swift */; };
+		93B66B0B27C5500A0001BF22 /* SharedTickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B66B0A27C5500A0001BF22 /* SharedTickets.swift */; };
+		93B66B3627C7FCCD0001BF22 /* UIColor Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B66B3527C7FCCD0001BF22 /* UIColor Extension.swift */; };
+		93BD18B827C1746A004BFBA4 /* CitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD18B727C1746A004BFBA4 /* CitiesVC.swift */; };
+		93BD18BA27C17CD3004BFBA4 /* BusListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD18B927C17CD3004BFBA4 /* BusListVC.swift */; };
+		93BD18BC27C17FC5004BFBA4 /* BusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD18BB27C17FC5004BFBA4 /* BusModel.swift */; };
+		93BD18BE27C1981A004BFBA4 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD18BD27C1981A004BFBA4 /* EmptyView.swift */; };
+		93BD18C027C1989F004BFBA4 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93BD18BF27C1989F004BFBA4 /* EmptyView.xib */; };
+		93BF238427C2B75400C414CD /* SelectedSeatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BF238327C2B75400C414CD /* SelectedSeatCell.swift */; };
+		93BF238627C2BF3D00C414CD /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BF238527C2BF3D00C414CD /* TicketModel.swift */; };
+		93BF238827C2BF5900C414CD /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BF238727C2BF5900C414CD /* Passenger.swift */; };
+		93BF238A27C2F4B300C414CD /* PayScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BF238927C2F4B300C414CD /* PayScreenVC.swift */; };
+		C3E73E1B8C5AC768AC39894C /* Pods_BusTrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6992F622B2ED7BC69AAAD6 /* Pods_BusTrip.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		930DBB8A27C3F8A700E47778 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
+		930DBB8C27C4126000E47778 /* ConfirmPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPopUpVC.swift; sourceTree = "<group>"; };
+		930DBB9027C42B6D00E47778 /* GenderSelectPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectPopUp.swift; sourceTree = "<group>"; };
+		930DBB9227C42D7100E47778 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		930DBB9427C42DAD00E47778 /* ErrorPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPopUpVC.swift; sourceTree = "<group>"; };
+		938BFB4927C285D800C7D42E /* SeatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsVC.swift; sourceTree = "<group>"; };
+		938BFB4B27C28FC300C7D42E /* SeatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatCell.swift; sourceTree = "<group>"; };
+		938BFB4D27C2924200C7D42E /* SeatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatModel.swift; sourceTree = "<group>"; };
+		938DC04527C1B4A50043AA0F /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		938DC04727C2730C0043AA0F /* BusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCell.swift; sourceTree = "<group>"; };
+		93959C7627C149D200BE178A /* BusTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93959C7927C149D200BE178A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93959C7B27C149D200BE178A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		93959C8027C149D200BE178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93959C8327C149D200BE178A /* BusTrip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BusTrip.xcdatamodel; sourceTree = "<group>"; };
+		93959C8527C149D400BE178A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93959C8827C149D400BE178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93959C8A27C149D400BE178A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93959C9F27C152FF00BE178A /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		93959CA127C1536900BE178A /* OnboardingSlideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlideModel.swift; sourceTree = "<group>"; };
+		93959CA727C1573800BE178A /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		93959CA927C1580400BE178A /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		93959CAB27C15F5500BE178A /* FindDestinationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDestinationVC.swift; sourceTree = "<group>"; };
+		93959CAD27C15F7C00BE178A /* BookedDestinationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookedDestinationsVC.swift; sourceTree = "<group>"; };
+		93B66B0427C4FDE10001BF22 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		93B66B0627C4FE670001BF22 /* TicketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketVC.swift; sourceTree = "<group>"; };
+		93B66B0827C51A130001BF22 /* TicketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCell.swift; sourceTree = "<group>"; };
+		93B66B0A27C5500A0001BF22 /* SharedTickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTickets.swift; sourceTree = "<group>"; };
+		93B66B3527C7FCCD0001BF22 /* UIColor Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor Extension.swift"; sourceTree = "<group>"; };
+		93BD18B727C1746A004BFBA4 /* CitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesVC.swift; sourceTree = "<group>"; };
+		93BD18B927C17CD3004BFBA4 /* BusListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListVC.swift; sourceTree = "<group>"; };
+		93BD18BB27C17FC5004BFBA4 /* BusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusModel.swift; sourceTree = "<group>"; };
+		93BD18BD27C1981A004BFBA4 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		93BD18BF27C1989F004BFBA4 /* EmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
+		93BF238327C2B75400C414CD /* SelectedSeatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSeatCell.swift; sourceTree = "<group>"; };
+		93BF238527C2BF3D00C414CD /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
+		93BF238727C2BF5900C414CD /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
+		93BF238927C2F4B300C414CD /* PayScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayScreenVC.swift; sourceTree = "<group>"; };
+		9AF346EEA688E57748A20E77 /* Pods-BusTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusTrip.debug.xcconfig"; path = "Target Support Files/Pods-BusTrip/Pods-BusTrip.debug.xcconfig"; sourceTree = "<group>"; };
+		CE6992F622B2ED7BC69AAAD6 /* Pods_BusTrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusTrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8BDCA1647753A3FDB816768 /* Pods-BusTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusTrip.release.xcconfig"; path = "Target Support Files/Pods-BusTrip/Pods-BusTrip.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93959C7327C149D200BE178A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E73E1B8C5AC768AC39894C /* Pods_BusTrip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		133484B0821079F7ADDB86A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AF346EEA688E57748A20E77 /* Pods-BusTrip.debug.xcconfig */,
+				D8BDCA1647753A3FDB816768 /* Pods-BusTrip.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		930DBB8E27C42B4200E47778 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				93BF238327C2B75400C414CD /* SelectedSeatCell.swift */,
+				938BFB4B27C28FC300C7D42E /* SeatCell.swift */,
+				938DC04727C2730C0043AA0F /* BusCell.swift */,
+				93B66B0827C51A130001BF22 /* TicketCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		930DBB8F27C42B5100E47778 /* PopUps */ = {
+			isa = PBXGroup;
+			children = (
+				930DBB8C27C4126000E47778 /* ConfirmPopUpVC.swift */,
+				930DBB9027C42B6D00E47778 /* GenderSelectPopUp.swift */,
+				930DBB9427C42DAD00E47778 /* ErrorPopUpVC.swift */,
+			);
+			path = PopUps;
+			sourceTree = "<group>";
+		};
+		93959C6D27C149D100BE178A = {
+			isa = PBXGroup;
+			children = (
+				93959C7827C149D200BE178A /* BusTrip */,
+				93959C7727C149D200BE178A /* Products */,
+				133484B0821079F7ADDB86A5 /* Pods */,
+				B2A32D9CCE8620FD6FE041A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93959C7727C149D200BE178A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93959C7627C149D200BE178A /* BusTrip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93959C7827C149D200BE178A /* BusTrip */ = {
+			isa = PBXGroup;
+			children = (
+				93959C9927C1512900BE178A /* Onboarding */,
+				93959C9827C1511300BE178A /* CustomViews */,
+				93959C9727C150F900BE178A /* Extensions */,
+				93959C9627C150EF00BE178A /* Controllers */,
+				93959C9527C150DC00BE178A /* Views */,
+				93959C9427C150D600BE178A /* Models */,
+				93959C7927C149D200BE178A /* AppDelegate.swift */,
+				93959C7B27C149D200BE178A /* SceneDelegate.swift */,
+				93959C7F27C149D200BE178A /* Main.storyboard */,
+				93959C8527C149D400BE178A /* Assets.xcassets */,
+				93959C8727C149D400BE178A /* LaunchScreen.storyboard */,
+				93959C8A27C149D400BE178A /* Info.plist */,
+				93959C8227C149D200BE178A /* BusTrip.xcdatamodeld */,
+			);
+			path = BusTrip;
+			sourceTree = "<group>";
+		};
+		93959C9427C150D600BE178A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93BD18BB27C17FC5004BFBA4 /* BusModel.swift */,
+				938DC04527C1B4A50043AA0F /* CityModel.swift */,
+				938BFB4D27C2924200C7D42E /* SeatModel.swift */,
+				93BF238527C2BF3D00C414CD /* TicketModel.swift */,
+				93BF238727C2BF5900C414CD /* Passenger.swift */,
+				930DBB9227C42D7100E47778 /* ErrorModel.swift */,
+				93B66B0A27C5500A0001BF22 /* SharedTickets.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93959C9527C150DC00BE178A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93BD18BF27C1989F004BFBA4 /* EmptyView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93959C9627C150EF00BE178A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93959CAB27C15F5500BE178A /* FindDestinationVC.swift */,
+				93BD18B727C1746A004BFBA4 /* CitiesVC.swift */,
+				93BD18B927C17CD3004BFBA4 /* BusListVC.swift */,
+				938BFB4927C285D800C7D42E /* SeatsVC.swift */,
+				93BF238927C2F4B300C414CD /* PayScreenVC.swift */,
+				93959CAD27C15F7C00BE178A /* BookedDestinationsVC.swift */,
+				93B66B0627C4FE670001BF22 /* TicketVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		93959C9727C150F900BE178A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				93959C9F27C152FF00BE178A /* UIView + Extension.swift */,
+				930DBB8A27C3F8A700E47778 /* NotificationExtension.swift */,
+				93B66B3527C7FCCD0001BF22 /* UIColor Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		93959C9827C1511300BE178A /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				930DBB8F27C42B5100E47778 /* PopUps */,
+				930DBB8E27C42B4200E47778 /* Cells */,
+				93BD18BD27C1981A004BFBA4 /* EmptyView.swift */,
+				93B66B0427C4FDE10001BF22 /* TicketView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		93959C9927C1512900BE178A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				93959CA127C1536900BE178A /* OnboardingSlideModel.swift */,
+				93959CA727C1573800BE178A /* OnboardingCell.swift */,
+				93959CA927C1580400BE178A /* OnboardingVC.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B2A32D9CCE8620FD6FE041A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE6992F622B2ED7BC69AAAD6 /* Pods_BusTrip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93959C7527C149D200BE178A /* BusTrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93959C8D27C149D400BE178A /* Build configuration list for PBXNativeTarget "BusTrip" */;
+			buildPhases = (
+				95997FA1AC27CB972F6F9194 /* [CP] Check Pods Manifest.lock */,
+				93959C7227C149D200BE178A /* Sources */,
+				93959C7327C149D200BE178A /* Frameworks */,
+				93959C7427C149D200BE178A /* Resources */,
+				E480CD9F56674A42F2CC654A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BusTrip;
+			productName = BusTrip;
+			productReference = 93959C7627C149D200BE178A /* BusTrip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93959C6E27C149D100BE178A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					93959C7527C149D200BE178A = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 93959C7127C149D100BE178A /* Build configuration list for PBXProject "BusTrip" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93959C6D27C149D100BE178A;
+			productRefGroup = 93959C7727C149D200BE178A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93959C7527C149D200BE178A /* BusTrip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93959C7427C149D200BE178A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BD18C027C1989F004BFBA4 /* EmptyView.xib in Resources */,
+				93959C8927C149D400BE178A /* LaunchScreen.storyboard in Resources */,
+				93959C8627C149D400BE178A /* Assets.xcassets in Resources */,
+				93959C8127C149D200BE178A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95997FA1AC27CB972F6F9194 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BusTrip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E480CD9F56674A42F2CC654A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BusTrip/Pods-BusTrip-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BusTrip/Pods-BusTrip-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BusTrip/Pods-BusTrip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93959C7227C149D200BE178A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BD18BC27C17FC5004BFBA4 /* BusModel.swift in Sources */,
+				938BFB4A27C285D800C7D42E /* SeatsVC.swift in Sources */,
+				93BD18BE27C1981A004BFBA4 /* EmptyView.swift in Sources */,
+				93959C8427C149D200BE178A /* BusTrip.xcdatamodeld in Sources */,
+				93959CA827C1573800BE178A /* OnboardingCell.swift in Sources */,
+				93BF238627C2BF3D00C414CD /* TicketModel.swift in Sources */,
+				93959CA027C152FF00BE178A /* UIView + Extension.swift in Sources */,
+				938BFB4E27C2924200C7D42E /* SeatModel.swift in Sources */,
+				93B66B0B27C5500A0001BF22 /* SharedTickets.swift in Sources */,
+				93BF238827C2BF5900C414CD /* Passenger.swift in Sources */,
+				930DBB9127C42B6D00E47778 /* GenderSelectPopUp.swift in Sources */,
+				930DBB9527C42DAD00E47778 /* ErrorPopUpVC.swift in Sources */,
+				93B66B3627C7FCCD0001BF22 /* UIColor Extension.swift in Sources */,
+				93BF238A27C2F4B300C414CD /* PayScreenVC.swift in Sources */,
+				93BD18BA27C17CD3004BFBA4 /* BusListVC.swift in Sources */,
+				938DC04627C1B4A50043AA0F /* CityModel.swift in Sources */,
+				93959C7A27C149D200BE178A /* AppDelegate.swift in Sources */,
+				93BF238427C2B75400C414CD /* SelectedSeatCell.swift in Sources */,
+				93B66B0727C4FE670001BF22 /* TicketVC.swift in Sources */,
+				930DBB8B27C3F8A700E47778 /* NotificationExtension.swift in Sources */,
+				938BFB4C27C28FC300C7D42E /* SeatCell.swift in Sources */,
+				93B66B0527C4FDE10001BF22 /* TicketView.swift in Sources */,
+				93959C7C27C149D200BE178A /* SceneDelegate.swift in Sources */,
+				930DBB9327C42D7100E47778 /* ErrorModel.swift in Sources */,
+				93959CAE27C15F7C00BE178A /* BookedDestinationsVC.swift in Sources */,
+				930DBB8D27C4126000E47778 /* ConfirmPopUpVC.swift in Sources */,
+				938DC04827C2730C0043AA0F /* BusCell.swift in Sources */,
+				93959CA227C1536900BE178A /* OnboardingSlideModel.swift in Sources */,
+				93959CAC27C15F5500BE178A /* FindDestinationVC.swift in Sources */,
+				93B66B0927C51A130001BF22 /* TicketCell.swift in Sources */,
+				93959CAA27C1580400BE178A /* OnboardingVC.swift in Sources */,
+				93BD18B827C1746A004BFBA4 /* CitiesVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93959C7F27C149D200BE178A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93959C8027C149D200BE178A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93959C8727C149D400BE178A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93959C8827C149D400BE178A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93959C8B27C149D400BE178A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93959C8C27C149D400BE178A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93959C8E27C149D400BE178A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF346EEA688E57748A20E77 /* Pods-BusTrip.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62DQ2U4SZ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BusTrip/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeynepgizemgursoy.BusTrip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93959C8F27C149D400BE178A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8BDCA1647753A3FDB816768 /* Pods-BusTrip.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62DQ2U4SZ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BusTrip/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeynepgizemgursoy.BusTrip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93959C7127C149D100BE178A /* Build configuration list for PBXProject "BusTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93959C8B27C149D400BE178A /* Debug */,
+				93959C8C27C149D400BE178A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93959C8D27C149D400BE178A /* Build configuration list for PBXNativeTarget "BusTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93959C8E27C149D400BE178A /* Debug */,
+				93959C8F27C149D400BE178A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		93959C8227C149D200BE178A /* BusTrip.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93959C8327C149D200BE178A /* BusTrip.xcdatamodel */,
+			);
+			currentVersion = 93959C8327C149D200BE178A /* BusTrip.xcdatamodel */;
+			path = BusTrip.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 93959C6E27C149D100BE178A /* Project object */;
+}
