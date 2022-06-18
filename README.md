@@ -6,7 +6,7 @@ An app that shows the available buses and allows the user select seats for a bus
 * The user also can choose a seat on the bus when booking a ticket
 * The user can also see list of booked tickets from the tab bar
 ## Non-Functional Features
-* Supports iOS 12+
+* Supports iOS 15
 * Used Swift 5.5
 * CAShapeLayer
 * Singleton Pattern
